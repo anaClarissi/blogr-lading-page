@@ -1,0 +1,62 @@
+/*================================*/
+/*           VARIABLES            */
+/*================================*/
+
+:root {
+
+  /*================================*/
+  /*             COLORS             */
+  /*================================*/
+
+  --red-500: #ff525d;
+  --red-400: #ff7a85;
+  --blue-900: #1f3f5b;
+
+
+  --white: #ffffff;
+  --gray-600: #4b5862;
+  --gray-900: #25252d;
+
+
+  /* Background gradient - intro/CTA mobile nav: */
+
+  --orange-300: #ff8f70;
+  --red-550: #ff3d54;
+
+  /* Background gradient - body: */
+
+  --purple-950: #2c2d3f;
+  --purple-900: #3d3f61;
+
+
+  /*================================*/
+  /*              FONTS             */
+  /*================================*/
+
+  --font-primary: 'Ubuntu', Helvetica, sans-serif;
+  --font-secondary: 'Overpass', Arial, sans-serif;
+
+}
+
+
+
+/*================================*/
+/*              BODY              */
+/*================================*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--white);
+}
