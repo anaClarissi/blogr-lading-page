@@ -116,6 +116,11 @@ body {
   box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.15);
 }
 
+  #navbarNav.collapsing {
+    transition: none !important;
+  }
+
+
 #navbarNav.show .navbar-nav {
   align-items: center;
   width: 100%;
@@ -477,6 +482,7 @@ h3.title {
   #navbarNav {
     align-items: center;
     justify-content: space-between;
+    
   }
 
   .background-image {
