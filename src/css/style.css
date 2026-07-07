@@ -448,3 +448,76 @@ h3.title {
   text-decoration: none;
   color: var(--gray-200);
 }
+
+
+
+
+
+/*====================================*/
+/*    ~~~~~~~    DESKTOP   ~~~~~~~    */
+/*====================================*/
+
+@media (min-width: 60em) {
+  
+  /*================================*/
+  /*             HEADER             */
+  /*================================*/
+
+  #header {
+    background-image: linear-gradient(90deg,
+    var(--orange-300) 20%, 
+    var(--red-500),
+    var(--red-550));
+  }
+
+  #navbarNav {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .background-image {
+    transform: translate(20%, -30%) scale(2);
+  }
+
+  .navbar .container-fluid {
+    gap: 2rem;
+  }
+
+  .navbar-nav {
+    gap: 2rem;
+  }
+
+  .dropdown-toggle {
+    font-size: 1rem;
+    color: var(--gray-100);
+  }
+
+  .dropdown-toggle::after {
+    content: url('../assets/images/icon-arrow-light.svg');
+  }
+
+  .btn-login,
+  .btn-signup {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .btn-login {
+    color: var(--gray-100);
+  }
+
+  .btn-signup {
+    color: var(--red-500);
+    background-image: none;
+    background-color: var(--white);
+  }
+
+  .header-content {
+    max-width: none;
+  }
+
+  .header-content .title {
+    font-size: 2.75rem;
+  }
+
+}
