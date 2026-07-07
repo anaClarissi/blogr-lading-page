@@ -523,6 +523,12 @@ h3.title {
     color: var(--gray-100);
   }
 
+  .btn-login:hover,
+  .btn-login:focus {
+    color: var(--white);
+    text-decoration: underline;
+  }
+
   .btn-signup {
     color: var(--red-500);
     background-image: none;
