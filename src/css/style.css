@@ -627,4 +627,25 @@ h3.title {
     transform: translateX(-20%) scale(1.35);
   }
 
+
+
+  /*================================*/
+  /*             FOOTER             */
+  /*================================*/
+
+  #footer .container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .footer-content {
+    align-items: flex-start;
+  }
+
+  .footer-list {
+    text-align: left;
+  }
+
 }
