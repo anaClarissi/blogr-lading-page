@@ -389,6 +389,7 @@ h3.title {
   font-family: var(--font-secondary); 
   font-weight: 300;
   color: var(--gray-200);
+  margin: 0;
 }
 
 .section-background {
@@ -518,6 +519,112 @@ h3.title {
 
   .header-content .title {
     font-size: 2.75rem;
+  }
+
+
+
+  /*================================*/
+  /*              MAIN              */
+  /*================================*/
+
+  #main {
+    padding: 8rem 0;
+    overflow: hidden;
+  }
+
+  .section-container {
+    flex-direction: row;
+  }
+
+  .section-container .content {
+    align-items: flex-start;
+  }
+
+  h2.title,
+  h3.title,
+  .text {
+    text-align: left;
+  }
+
+  h3.title {
+    max-width: none;
+  }
+
+
+
+  /*================================*/
+  /*        PRIMARY SECTION         */
+  /*================================*/
+
+  .primary-section {
+    gap: 5rem;
+  }
+
+  .primary-section .section-container {
+    flex-direction: row-reverse;
+  }
+
+  .primary-section .section-image {
+    transform: translateX(20%) scale(1.35);
+  }
+
+  .primary-section h2.title {
+    text-align: center;
+  }
+
+
+
+  /*================================*/
+  /*       SECONDARY SECTION        */
+  /*================================*/
+
+  .secondary-section {
+    margin-top: 5rem;
+    justify-content: center;
+    background-image: linear-gradient(to right, var(--purple-950) 10%, var(--purple-900));
+  }
+
+  .secondary-section .section-container {
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .secondary-section .content {
+    padding: 1rem;
+    max-width: 30rem;
+    flex-grow: 1;
+  }
+
+  .secondary-section .section-image {
+    position: relative;
+    transform: scale(1.45);
+    flex-grow: 1;
+    width: 20rem;
+  }
+
+  .section-background {
+    left: 0;
+    width: 60%;
+    border-radius: 0 0 0 var(--border-radius);
+  }
+
+  .section-background-image {
+    transform: translateY(-50%) scale(1);
+  }
+
+
+
+  /*================================*/
+  /*        TERTIARY SECTION        */
+  /*================================*/
+
+  .tertiary-section {
+    padding: 8rem 0 4rem;
+  }
+
+  .tertiary-section .section-image {
+    transform: translateX(-20%) scale(1.35);
   }
 
 }
