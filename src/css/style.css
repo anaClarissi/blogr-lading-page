@@ -19,6 +19,8 @@
   --gray-600: #4b5862;
   --gray-900: #25252d;
 
+  --white-hover: #ffffff60;
+
 
   /* Background gradient - intro/CTA mobile nav: */
 
@@ -492,10 +494,23 @@ h3.title {
   .dropdown-toggle {
     font-size: 1rem;
     color: var(--gray-100);
+    border-bottom: 1px solid transparent;
   }
 
   .dropdown-toggle::after {
     content: url('../assets/images/icon-arrow-light.svg');
+  }
+
+  .dropdown-toggle:hover,
+  .dropdown-toggle:focus,
+  .dropdown-toggle:active {
+    color: var(--white) !important;
+    text-decoration: underline;
+  }
+
+  .dropdown-menu {
+    text-align: left;
+    background-color: var(--white);
   }
 
   .btn-login,
@@ -511,6 +526,21 @@ h3.title {
   .btn-signup {
     color: var(--red-500);
     background-image: none;
+    background-color: var(--white);
+  }
+
+  .btn-signup:hover,
+  .btn-signup:focus,
+  .btn-start-free:hover,
+  .btn-start-free:focus {
+    border: 1px solid var(--white-hover);
+    background-color: var(--white-hover);
+    color: var(--white);
+  }
+
+  .btn-learn-more:hover,
+  .btn-learn-more:focus {
+    color: var(--red-500);
     background-color: var(--white);
   }
 
@@ -647,6 +677,13 @@ h3.title {
 
   .footer-list {
     text-align: left;
+    gap: 1rem;
+  }
+
+  .footer-link:hover,
+  .footer-link:focus {
+    color: var(--white);
+    text-decoration: underline;
   }
 
 }
