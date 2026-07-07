@@ -458,6 +458,7 @@ h3.title {
 /*    ~~~~~~~    DESKTOP   ~~~~~~~    */
 /*====================================*/
 
+/* 960px */
 @media (min-width: 60em) {
   
   /*================================*/
@@ -610,7 +611,7 @@ h3.title {
   }
 
   .section-background-image {
-    transform: translateY(-50%) scale(1);
+    transform: translate(-15%,-50%) scale(1.25);
   }
 
 
@@ -636,7 +637,7 @@ h3.title {
   #footer .container {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 6rem;
   }
 
@@ -646,6 +647,101 @@ h3.title {
 
   .footer-list {
     text-align: left;
+  }
+
+}
+
+/* 1280px */
+@media (min-width: 80em) {
+  
+  /*================================*/
+  /*              MAIN              */
+  /*================================*/
+
+  .section-content {
+    justify-content: center;
+    max-width: 40rem;
+  }
+  
+  
+  
+  /*================================*/
+  /*        PRIMARY SECTION         */
+  /*================================*/
+  
+  .primary-section {
+    gap: 0;
+  }
+
+
+  .primary-section .section-image {
+    transform: translateX(10%) scale(1.25);
+  }
+
+
+  
+  /*================================*/
+  /*       SECONDARY SECTION        */
+  /*================================*/
+
+  .secondary-section .content {
+    max-width: 35rem;
+  }
+
+
+
+  /*================================*/
+  /*        TERTIARY SECTION        */
+  /*================================*/
+
+  .tertiary-section {
+    padding: 5rem 0;
+  }
+
+
+
+  /*================================*/
+  /*             FOOTER             */
+  /*================================*/
+
+  .footer-brand {
+    margin-right: 5rem;
+  }
+
+}
+
+/* 1440px */
+@media (min-width: 90em) {
+
+  /*================================*/
+  /*              MAIN              */
+  /*================================*/
+
+  .section-content {
+    gap: 5rem;
+  }
+
+
+  
+  /*================================*/
+  /*        TERTIARY SECTION        */
+  /*================================*/
+
+  .tertiary-section {
+    padding: 1rem 0;
+  }
+
+  .tertiary-section .section-image {
+    transform: translateX(-25%) scale(1);
+  }
+
+
+  /*================================*/
+  /*             FOOTER             */
+  /*================================*/
+
+  .footer-brand {
+    margin-right: 7rem;
   }
 
 }
